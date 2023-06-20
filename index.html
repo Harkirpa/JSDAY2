@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Day2</h1>
+    <h3>
+        Question 1. What is execution context?
+    </h3>
+    <h4>
+        When the JavaScript engine scans a script file, it makes an environment called the Execution Context that
+        handles the entire transformation and execution of the code.
+        During the context runtime, the parser parses the source code and allocates memory for the variables and
+        functions. The source code is generated and gets executed.
+    </h4>
+    <p>
+        There are two types of execution contexts: global and function. <br>
+        a. The global execution context is created when a JavaScript script first starts to run, and it represents the
+        global scope in JavaScript. <br>
+        b . A function execution context is created whenever a function is called, representing the function's local
+        scope.
+    </p>
+    <br>
+    <h3>
+        Question 2.What is an event loop and call stack
+    </h3>
+    <h4>
+        Answer . In JavaScript, the event loop and call stack are two key concepts that determine how code is executed
+        in the
+        language.
+    </h4>
+    <p>
+        1. The call stack is a data structure that keeps track of the function calls in a program. <br>
+        2. Whenever a function is called, it is added to the top of the call stack, and when the function completes, it
+        is removed from the top of the stack. <br>
+        3. This allows JavaScript to keep track of where it is in a program's execution and which function to return to
+        after the current one finishes.
+        <br>
+    </p>
+    <h3>
+        Question 3. What is creation phase and execution phase?
+    </h3>
+    <h4>
+        Answer. The creation phase includes creating the global and function execution contexts, creating the scope
+        chain, and allocating memories for the variables and functions. During the execution phase, the JavaScript
+        engine executes the code line by line. This includes evaluating and executing statements
+    </h4>
+    <h3>
+        Question 4. What is the spread operator?
+    </h3>
+    <h4>
+        Answer. The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or
+        object into another array or object
+    </h4>
+    <h3> Question 5.use of setTimeout()</h3>
+    <h4>The setTimeout() method calls a function after a number of milliseconds.
+
+        1 second = 1000 milliseconds.The global setTimeout() method sets a timer which executes a function 
+        or specified piece of code once the timer expires</h4>
+    
+        <pre>let timeout;
+
+            function myFunction() {
+              timeout = setTimeout(alertFunc, 3000);
+            }
+            
+            function alertFunc() {
+              alert("Hello!");
+            }</pre>
+            <h3>  Question 6. What are callbacks?
+    </h3>
+    <h4>
+        Answer. A JavaScript callback is a function which is to be executed after another function has finished
+        execution. A more formal definition would be - Any function that is passed as an argument to another function so
+        that it
+        can be executed in that other function is called as a callback function.
+    </h4>
+    <h3>  Question 7. What are callback hell?
+    </h3>
+    <h4>
+        Answer. Callback Hell is essentially nested callbacks stacked below one another forming a pyramid structure. Every callback depends/waits for the previous callback,
+         thereby making a pyramid structure that affects the readability and maintainability of the code.
+    </h4>
+    <h3>Question 8- Difference between undefined vs not defined vs Nan</h3>
+   <h4>undefined- It is a JavaScript keyword that has a special meaning. Everything which gets a 
+    space in memory will contain undefined until we assign a value to that memory space.
+    not defined: In JavaScript, it is one of the reference errors that JavaScript
+     will throw when someone accesses the variable which is not inside the memory heap.
+     In JavaScript, NaN is short for "Not-a-Number".
+
+     In JavaScript, NaN is a number that is not a legal number.
+     
+     The Number.isNaN() method returns true if the value is NaN, and the type is a Number</h4>
+</body>
+</html>
